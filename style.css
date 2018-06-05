@@ -1,0 +1,222 @@
+body {
+  background: #589ca7 url('http://www.dreamtemplate.com/dreamcodes/bg_images/color/c12.jpg') no-repeat center top;
+}
+
+.container {
+  margin-right: 33px;
+  margin-left: 33px;
+  margin-top: 33px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 150px 150px;
+  grid-gap: 10px;
+}
+
+.hero-image {
+  background: url('img/hero-image.jpg');
+  background-position: center;
+  background-size: cover;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.price {
+  background-color: #ffc600;
+  text-align: center;
+}
+
+.price h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3.4rem;
+}
+
+.price p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+.hero-image h1,
+p {
+  background: #ffc600;
+  padding: 2px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero-image h1 {
+  font-size: 3rem;
+  width: 265px;
+  position: relative;
+  top: 10%;
+  left: 6%;
+}
+
+.hero-image p {
+  font-size: 1.5rem;
+  width: 150px;
+  position: relative;
+  top: 5%;
+  left: 6%;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px;
+  text-align: center;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-content: center;
+}
+
+.menu {
+  background: #ffc600;
+  height: 28px;
+}
+
+.menu h4 {
+  margin: 0;
+  margin-top: 6px;
+}
+
+.foods {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.inner-foods {
+  background-color: white;
+  background: rgba(255, 0, 0, 0.2);
+}
+
+.desc p {
+  background: none;
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.big-banner {
+  display: grid;
+  grid-template-columns: 600px auto;
+  grid-gap: 10px;
+  margin-top: 10px;
+  background: white;
+}
+
+.big-img img {
+  margin-top: 20px;
+  margin-left: 110px;
+}
+
+.banner-desc {
+  margin-top: 80px;
+}
+
+.banner-desc h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.banner-desc h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.banner-desc button {
+  border: none;
+  background: #ffc600;
+  padding: 10px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1030px) {
+  .big-banner {
+    grid-template-columns: 500px auto;
+  }
+  .big-img img {
+    width: 60%;
+  }
+  .banner-desc {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 845px) {
+  .big-banner {
+    grid-template-columns: 400px auto;
+  }
+  .big-img img {
+    width: 50%;
+  }
+  .banner-desc {
+    margin-top: -6px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    margin: 0;
+  }
+  .hero-image {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  .grid-container {
+    grid-template-columns: repeat(6, auto);
+  }
+  .price1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .price2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+  }
+  .options {
+    grid-template-columns: auto auto auto;
+  }
+  .foods {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 661px) {
+  .big-banner {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+  .big-img img {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .banner-desc {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .price1 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  .price2 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  .foods {
+    grid-template-columns: auto;
+  }
+}
